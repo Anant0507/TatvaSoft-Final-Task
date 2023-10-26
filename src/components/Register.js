@@ -48,7 +48,16 @@ export const Register = () => {
         //Tatvasoft API
         await authService.create(requestData).then((res) => {
             navigate("/login");
-            toast.success("Successfully Registered");
+            toast.success('Successfully Registered', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
         });
 
         //Localhost:8000/api

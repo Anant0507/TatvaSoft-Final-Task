@@ -78,7 +78,7 @@ export const User    = () => {
     };
 
     return (
-        <div className={userStyles.userWrapper}>
+            <div className={userStyles.userWrapper}>
                 <Typography variant="h4" sx={{fontWeight:"bold", color:"#414141"}}>User</Typography>
                 <div className={userStyles.underline}></div>
                 <div className={userStyles.search}>
@@ -140,7 +140,6 @@ export const User    = () => {
                                     color: 'white', // Example text color on hover
                                 },     
                             }}
-                            
                             >
                             Edit
                             </Button>
@@ -152,7 +151,6 @@ export const User    = () => {
                                 onClick={() => {
                                 setOpen(true);
                                 setSelectedId(row.id ?? 0);
-
                                 }}
                                 sx={{
                                     textTransform:"capitalize",
@@ -174,9 +172,9 @@ export const User    = () => {
                         </TableRow>
                     ))}
                     {!userList?.items?.length && (
-                        <TableRow className="TableRow">
-                        <TableCell colSpan={5} className="TableCell">
-                            <Typography align="center" className="noDataText">
+                        <TableRow>
+                        <TableCell colSpan={5}>
+                            <Typography align="center">
                             No Users
                             </Typography>
                         </TableCell>

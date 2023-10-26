@@ -24,9 +24,9 @@ const getAllBooks = async () => {
 const deleteBook = async (id) => {
     const url = `${ENDPOINT}?id=${id}`;
     return request.delete(url).then((res) => {
-      return res;
+        return res;
     });
-  };
+};
 
 const addBook = async (data) => {
     const url = `${ENDPOINT}`;

@@ -69,9 +69,6 @@ export const EditCategory = () => {
           }) => (
             <form onSubmit={handleSubmit}>
                 <div className={editCategoryStyles.textFieldWrapper}>
-                  <div>
-                    
-                  </div>
                   Category Name *
                   <TextField
                     id="first-name"

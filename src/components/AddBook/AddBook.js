@@ -16,45 +16,62 @@ import { useNavigate } from "react-router-dom"
     const navigate = useNavigate();
     const categories = [
         {
-          "id": 2,
-          "name": "Horror",
+          id: 12,
+          name: "History",
         },
         {
-          "id": 3,
-          "name": "Literature",
+          id: 6,
+          name: "Business",
         },
         {
-          "id": 4,
-          "name": "Science & technology",
+          id: 7,
+          name: "IT",
         },
         {
-          "id": 5,
-          "name": "Self improvements",
+          id: 15,
+          name: "Animes (Manga)",
         },
         {
-          "id": 6,
-          "name": "Business",
+            id: 16,
+            name: "Science",
         },
         {
-          "id": 7,
-          "name": "IT",
+            id: 20,
+            name: "Cyber Security",
         },
         {
-          "id": 8,
-          "name": "Test Category",
+            id: 23,
+            name: "Historical Fiction",
         },
         {
-            "id": 9,
-            "name": "New Update Category",
-        },
-        {
-            "id": 10,
-            "name": "Love Story",
-        },
-        {
-            "id": 11,
-            "name": "Tourist Place",
-        },
+            id: 26,
+            name: "Good Habits",
+            
+            },
+            {
+            id: 27,
+            name: "Self Improvement",
+            
+            },
+            {
+            id: 28,
+            name: "Sports",
+            
+            },
+            {
+            id: 30,
+            name: "Mathematics",
+            
+            },
+            {
+            id: 31,
+            name: "Biography",
+            
+            },
+            {
+            id: 32,
+            name: "Stock Market",
+        }
       ]
     const uploadImage = async (e) => {
         console.log(e.target.files);
@@ -81,7 +98,7 @@ import { useNavigate } from "react-router-dom"
         name:"",
         description:"",
         price: 0,
-        categoryId:8,
+        categoryId:6,
         base64image: null
     };
     const onFormSubmit = async (values) => {
